@@ -1,0 +1,24 @@
+{% schema %}
+{
+  "name": "Product Section",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Select product"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="product-section">
+  {% assign product = all_products[section.settings.product] %}
+  {% if product %}
+    <h2>{{ product.title }}</h2>
+    <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+    <p>{{ product.description }}</p>
+    <span>{{ product.price | money }}</span>
+  {% else %}
+    <p>No product selected.</p>
+  {% endif %}
+</div>
