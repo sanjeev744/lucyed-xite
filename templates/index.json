@@ -240,6 +240,14 @@
         "cta_url": "",
         "cta_text": ""
       }
+    },
+    "xite_aboutus_WwzGpm": {
+      "type": "xite-aboutus",
+      "name": "About Us Section",
+      "settings": {
+        "heading": "About Us",
+        "description": "Write something about your brand, mission, or story here."
+      }
     }
   },
   "order": [
@@ -249,6 +257,7 @@
     "collage",
     "video",
     "multicolumn",
-    "lucyd_faqs_rgMwCK"
+    "lucyd_faqs_rgMwCK",
+    "xite_aboutus_WwzGpm"
   ]
 }
